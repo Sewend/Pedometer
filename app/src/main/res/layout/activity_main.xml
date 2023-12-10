@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="290dp"
+        android:layout_height="284dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/radius"
+        android:orientation="vertical"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="243dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="#00B7FF"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="288dp"
+            android:layout_height="168dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ШАГИ"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="287dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/radius_button"
+        android:onClick="OnStopped"
+        android:text="ПАУЗА"
+        android:textColor="#00B7FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
